@@ -6,7 +6,7 @@
           <p>&copy; 2021 8926ITL成員</p>
         </div>
         <h3 class="content">
-          <p>2021.03.01 - 人員招募中</p>
+          <p>2021.03.01 - 人才招募中</p>
           <i class="fas fa-caret-right"></i>
         </h3>
         <div class="gold">
