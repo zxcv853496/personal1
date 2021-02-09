@@ -1,0 +1,61 @@
+<template>
+  <div class="home">
+    <div class="section">
+      <div class="banner">
+        <div class="copy">
+          <p>&copy; 2021 8926ITL成員</p>
+        </div>
+        <h3 class="content">
+          <p>2021.03.01 - 人員招募中</p>
+          <i class="fas fa-caret-right"></i>
+        </h3>
+        <div class="gold">
+          <div class="gold-title">
+            <i class="far fa-thumbs-up"></i>金榜題名
+          </div>
+          <table>
+            <tr>
+              <td class="title">
+                <i class="fas fa-trophy"></i>：
+              </td>
+              <td class="title">
+                大手攜小手-物聯網程式設計競賽
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-user-friends"></i>：
+              </td>
+              <td>
+                陳峻暐 許惟元 徐偉程
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-table"></i>：
+              </td>
+              <td>
+                2021.03.01
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="height:1000px"></div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'Home',
+  components: {
+  },
+  data() {
+    return {
+      color: 'red',
+    }
+  }
+}
+</script>
