@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      scroll: true,
+      scroll: false,
       menuopen: false,
     };
   },
