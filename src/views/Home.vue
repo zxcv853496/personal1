@@ -42,15 +42,17 @@
         </div>
       </div>
     </div>
-    <div class="section" style="height:1000px"></div>
+    <teacher />
   </div>
 </template>
 
 <script>
+import teacher from '../compoents/teacher/index'
 
 export default {
   name: 'Home',
   components: {
+    teacher,
   },
   data() {
     return {

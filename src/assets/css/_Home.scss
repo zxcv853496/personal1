@@ -1,4 +1,5 @@
 .home{
+  
   .section{
     position: relative;
       .banner{
@@ -68,10 +69,18 @@
           bottom: 0;
           transform: translate(81%, -50%);
           box-shadow: 0 0 68px rgba(85, 85, 85, 0.205);
-          transition: transform .5s;
+          transition: transform .5s ;
+          @media (max-width:675px) {
+            height: 175px;
+            padding: 10px;
+          }
           &:hover{
             transform: translate(0, -50%);
+            @media (max-width:675px) {
+              transform: translate(0%, -50%);
+            }
           }
+
           hr{
             border: none;
             height: 1px;
@@ -88,6 +97,13 @@
             letter-spacing: .2em;
             font-weight: 500;
           }
+          @media (max-width:500px) {
+            transform: translate(86%, -50%);
+            .gold-title{
+              margin-right: 0;
+              padding: 4px 12px;
+            }
+          }
           table{
             tr{
               td{
@@ -95,6 +111,9 @@
                 font-weight: 500;
                 padding: 12px 8px;
                 border-bottom: solid 1px #E8E8E8;
+                @media (max-width:440px) {
+                  padding: 12px 0px;
+                }
               }
               .title{
                 color: $scheme-color;
