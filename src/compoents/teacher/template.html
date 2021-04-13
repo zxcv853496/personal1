@@ -8,27 +8,44 @@
             </div>
         </div>
         <div class="banner">
-            <img src="/img/README.jpg" alt="">
+            <div class="img-container">
+                <img src="http://placeimg.com/640/480/abstract" alt="">
+            </div>
             <div class="canvas">
-                <h4>Experiences</h4>
+                <h4>- Educations -</h4>
                 <div class="content">
-                    <p>Ph. D., National Cheng Kung University, R.O.C. (2002-2008)</p>
-                    <p>國立成功大學電機工程學系博士</p>
+                    <span class="sub-title">
+                        (2002-2008)
+                    </span>
+                    <div>
+                        <p>Ph. D., National Cheng Kung University, R.O.C. </p>
+                        <p>國立成功大學電機工程學系博士</p>
+                    </div>
                 </div>
                 <div class="content">
-                    <p>M. S., National Cheng Kung University, R.O.C. (1999-2001)</p>
-                    <p>國立成功大學資訊工程學系碩士</p>
+                    <span class="sub-title">
+                        (1999-2001)
+                    </span>
+                    <div>
+                        <p>M. S., National Cheng Kung University, R.O.C. </p>
+                        <p>國立成功大學資訊工程學系碩士</p>
+                    </div>
                 </div>
-    
-                <span>Hover</span>
-                <div class="hidden">
-                    <p>Experiences</p>
-                    <p>Dean of College of Design and Information, Overseas Chinese University, 2019.02 - 僑光科技大學設計與資訊學院院長</p>
-                    <p>Professor and Chair, Department of Information Technology, Overseas Chinese University, 2018.08 - 僑光科技大學資訊科技系教授兼主任</p>
+                <div class="span-container">
+                    <span v-on:click='ExperiencesOpen()'>Hover</span>
                 </div>
-    
             </div>
         </div>
+        <div  class="introduction" :class="{'active':active}" >
+            <div class="container">
+                <table>
+                    <tr v-for="item in data" v-bind:key='item.index'>
+                        <th>{{ item.year }}</th> 
+                        <td>{{ item.content}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="height: 1000px;">123</div>
     </div>
-    <DIV style="height: 100px;"></DIV>
 </section>
