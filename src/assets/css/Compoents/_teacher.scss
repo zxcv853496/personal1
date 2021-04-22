@@ -132,6 +132,10 @@
                 width: 100%;
                 border-radius: 48px;
                 box-shadow: 1px 1px 10px 1px rgba(187, 187, 187, 0.699);
+                transition: all .3s;
+                &:hover{
+                    transform:scale(1.05)
+                }
             }
         }
         .canvas{
