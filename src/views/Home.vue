@@ -44,6 +44,7 @@
     </div>
     <Teacher />
     <Personal />
+    <div style="height:500px"></div>
   </div>
 </template>
 

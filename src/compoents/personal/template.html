@@ -8,7 +8,12 @@
                 <div class="img">
                     <img v-bind:src=item.img alt="">
                 </div>
-                <p>{{ item.name }}</p>
+                <h2 class="name">{{ item.name }}</h2>
+                <h2>{{ item.englishName}}</h2>
+                <div class="p-container">
+                    <p class="p-title">競賽參與</p>
+                    <p class="p-content">{{ item.content }}</p>
+                </div>
             </div>
         </div>
     </div>

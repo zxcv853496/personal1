@@ -2,12 +2,11 @@
     padding-top: 100px;
     position: relative;
     >.container{
-        max-width: 1200px;
+        max-width: 1500px;
         width: 90%;
         margin: 0 auto;
         @media (max-width:375px) {
             width: 100%;
-
         }
         .introduction{
             opacity: 0;
