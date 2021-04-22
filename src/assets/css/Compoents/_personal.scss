@@ -1,0 +1,51 @@
+.personal{
+    >.container{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width:375px) {
+            width: 100%;
+
+        }
+    }
+    .title{
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @media (max-width:774px) {
+            flex-direction: column;
+        }
+        h2{
+            font-size: 306%;
+            font-weight: 500;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                right: 40%;
+                bottom: -20%;
+                display: inline-block;
+                border-radius: 2px;
+                background-color: #D7D7D7;
+                width: 46px;
+                height: 3px;
+            }
+        }
+    }
+    .img-container{
+        margin-top: 40px;
+        display: flex;
+        .img-content{
+            width: 30%;
+            .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

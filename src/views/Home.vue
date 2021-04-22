@@ -42,17 +42,20 @@
         </div>
       </div>
     </div>
-    <teacher />
+    <Teacher />
+    <Personal />
   </div>
 </template>
 
 <script>
-import teacher from '../compoents/teacher/index'
+import Teacher from '../compoents/teacher/index'
+import Personal from '../compoents/personal/index'
 
 export default {
   name: 'Home',
   components: {
-    teacher,
+    Teacher,
+    Personal,
   },
   data() {
     return {
