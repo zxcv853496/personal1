@@ -33,6 +33,9 @@
                     font-size: 2vmin;
                     margin: 0 auto;
                     width: 90%;
+                    @media (max-width:630px) {
+                        font-size: 3vmin;
+                    }
                 }
                 tr{
                     height: 40px;
