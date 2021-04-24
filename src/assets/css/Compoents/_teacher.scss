@@ -29,6 +29,12 @@
                 @media (max-width:851px) {
                     padding: 20px;
                 }
+                h4{
+                    color: $scheme-color;
+                    text-align: center;
+                    font-size: 5vmin;
+                    margin-bottom: 10px;;
+                }
                 table{
                     font-size: 2vmin;
                     margin: 0 auto;

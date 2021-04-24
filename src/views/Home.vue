@@ -44,6 +44,8 @@
     </div>
     <Teacher />
     <Personal />
+    <Introduction />
+
     <div style="height:500px"></div>
   </div>
 </template>
@@ -51,12 +53,14 @@
 <script>
 import Teacher from '../compoents/teacher/index'
 import Personal from '../compoents/personal/index'
+import Introduction from '../compoents/introduction/index'
 
 export default {
   name: 'Home',
   components: {
     Teacher,
     Personal,
+    Introduction,
   },
   data() {
     return {
