@@ -45,6 +45,7 @@
     <Teacher />
     <Personal />
     <Introduction />
+    <Showimg />
 
     <div style="height:500px"></div>
   </div>
@@ -54,13 +55,14 @@
 import Teacher from '../compoents/teacher/index'
 import Personal from '../compoents/personal/index'
 import Introduction from '../compoents/introduction/index'
-
+import Showimg from '../compoents/showimg/index'
 export default {
   name: 'Home',
   components: {
     Teacher,
     Personal,
     Introduction,
+    Showimg,
   },
   data() {
     return {
