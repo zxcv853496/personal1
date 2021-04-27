@@ -70,6 +70,9 @@
           transform: translate(81%, -50%);
           box-shadow: 0 0 68px rgba(85, 85, 85, 0.205);
           transition: transform .5s ;
+          @media (max-width:343px) {
+            display: none;
+          }
           @media (max-width:675px) {
             height: 175px;
             padding: 10px;

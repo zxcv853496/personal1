@@ -48,14 +48,14 @@ export default {
                     year: '1999.09 - 2001.06',
                     content: '成功大學資訊工程所網路助教',
                 },
-            ]
+            ],
         }
     },
 
     methods:{
       ExperiencesOpen(){
           this.active = !this.active
-      }  
+      },
     }
 }
 </script>

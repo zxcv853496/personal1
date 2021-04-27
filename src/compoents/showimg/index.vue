@@ -11,32 +11,27 @@ export default {
                 {
                     title:'123',
                     desc:'456',
-                    img:'/img/introduction-banner.jpg'
+                    img:'/img/introduction-cards1.jpg'
                 },
                 {
                     title:'123',
                     desc:'456',
-                    img:'/img/introduction-banner.jpg'
+                    img:'/img/introduction-cards2.jpg'
                 },
                 {
                     title:'123',
                     desc:'456',
-                    img:'/img/introduction-banner.jpg'
+                    img:'/img/introduction-cards3.jpg'
                 },
                 {
                     title:'123',
                     desc:'456',
-                    img:'/img/introduction-banner.jpg'
+                    img:'/img/introduction-cards4.jpg'
                 },
                 {
                     title:'123',
                     desc:'456',
-                    img:'/img/introduction-banner.jpg'
-                },
-                {
-                    title:'123',
-                    desc:'456',
-                    img:'/img/introduction-banner.jpg'
+                    img:'/img/introduction-cards5.jpg'
                 },
                 {
                     title:'123',

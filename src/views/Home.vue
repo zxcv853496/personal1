@@ -46,8 +46,6 @@
     <Personal />
     <Introduction />
     <Showimg />
-
-    <div style="height:500px"></div>
   </div>
 </template>
 

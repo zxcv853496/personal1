@@ -21,10 +21,8 @@ export default {
       // this.i = scrollTop;
       if (scrollTop > 0) {
         this.scroll = true
-        console.log(this.scroll);
       } else {
         this.scroll = false
-        console.log(this.scroll);
       }
     },
 

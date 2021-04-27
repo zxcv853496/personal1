@@ -93,6 +93,9 @@
                 font-weight: 500;   
                 transition: transform .3s , color .3s;
                 padding: 0 20px;
+                @media (max-width:325px) {
+                    padding: 0 10px;
+                }
                 &:hover{
                     transform: scale(1.1);   
                     color: $scheme-color;
