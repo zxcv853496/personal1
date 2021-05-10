@@ -2,6 +2,21 @@
     height: 600px;
     margin: 100px 0;
     padding: 50px 0;
+
+    @media (max-width:637px) {
+        height: 500px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+    @media (max-width:450px) {
+        height: 350px;
+    }
+    @media (max-width:350px) {
+
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
     .top-container{
         text-align: center;
         h2{

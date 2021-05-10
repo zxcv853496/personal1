@@ -8,8 +8,11 @@
         background-size: cover;
         background-position:center;
         width: 95%;
-        height: 800px;
+        height: 85vh;
         border-radius: 48px;
+        @media (max-width:814px) {
+          height: 90vh;
+        }
         // position: relative;
         .copy{
           position: absolute;
@@ -126,6 +129,49 @@
           }
         }
       }
+      >.hand-container{
+        position: absolute;
+        bottom: -70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @media (max-height:900px) {
+          bottom: 100px;
+        }
+        @media (max-height:750px) {
+          display: none;
+        }
+        >.hand-arrow{
+            border: 2px solid #3D6BDB;
+            height: 50px;
+            width: 35px;
+            border-radius: 20px;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            @media (max-height:900px) {
+              background-color: white;
+            }
+            &::after{
+                content: '';
+                width: 2px;
+                height: 15px;
+                background-color: #3D6BDB;
+                position: absolute;
+                top: 5px;
+                left: 49%;
+                animation: hand-lineMove 1s ease infinite;
+            }
+            @keyframes hand-lineMove {
+                from{
+                    height: 0;
+                }
+                to{
+                    height: 15px;
+                }
+            }
+        }
+    }
   }
 
 }

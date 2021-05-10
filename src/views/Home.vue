@@ -41,6 +41,9 @@
           </table>
         </div>
       </div>
+      <div class="hand-container">
+        <button class="hand-arrow"></button>
+      </div>
     </div>
     <Teacher />
     <Personal />
@@ -66,6 +69,26 @@ export default {
     return {
       color: 'red',
     }
-  }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll, true);
+  },
+  methods: {
+    handleScroll() {
+      console.log(scrollTop)
+      var scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      // var scroll = scrollTop - this.i;
+      // this.i = scrollTop;
+      if (scrollTop > 0) {
+        this.scroll = true
+      } else {
+        this.scroll = false
+      }
+    },
+  },
+
 }
 </script>
