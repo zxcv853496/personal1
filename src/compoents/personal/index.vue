@@ -9,7 +9,7 @@ export default {
             data:[
                 {
                     name:'陳峻暐',
-                    englishName:'chen-jun-wei',
+                    englishName:'CHEN JUN WEI',
                     img:'/img/personal-1.jpg',
                     content:[
                         '大手攜小手-物聯網程式設計競賽',
@@ -18,7 +18,7 @@ export default {
                 },
                 {
                     name:'許維元',
-                    englishName:'chen-jun-wei',
+                    englishName:'HU XU WEI YUAN',
                     img:'/img/personal-2.jpg',
                     content:[
                         '大手攜小手-物聯網程式設計競賽',
@@ -26,8 +26,8 @@ export default {
                     ]
                 },
                 {
-                    name:'徐偉成',
-                    englishName:'chen-jun-wei',
+                    name:'徐偉程',
+                    englishName:'XU WEI CHENG',
                     img:'/img/personal-3.jpg',
                     content:[
                         '大手攜小手-物聯網程式設計競賽',

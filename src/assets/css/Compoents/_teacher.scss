@@ -1,6 +1,9 @@
 .teacher{
     padding-top: 100px;
     position: relative;
+    @media (max-width:500px) {
+        padding-top: 20px;
+    }
     >.container{
         max-width: 1500px;
         width: 90%;
@@ -179,12 +182,6 @@
                 text-align: center;
                 .sub-content{
                     p:nth-child(1){
-                        @media (max-width:960px) {
-                            display: none;   
-                        }
-                        @media (max-width:636px) {
-                            display: block;
-                        }
                         @media (max-width:500px) {
                             font-size: 12px;
                         }
@@ -253,5 +250,93 @@
         }
 
     }
+    >.container:nth-child(1){
+        .sub-content{
+ 
+            p:nth-child(1){
+                @media (max-width:960px) {
+                    display: none;   
+                }
+                @media (max-width:636px) {
+                    display: block;
+                }
+            }
+        }
+
+    }
+    >.container:nth-child(2){
+        margin-top: 150px;
+        @media (max-width:640px) {
+            margin-top: 75px;
+            &.active{
+                margin-top: 175px;
+            }
+        }
+        @media (max-width:500px) {
+            margin-top: 50px;
+            &.active{
+                margin-top: 50px;
+            }
+        }
+        .span-container{
+            justify-content: space-evenly;
+            @media (max-width:880px) {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            >.span{
+                width: 184px;
+                padding: 0 40px;
+                text-align: center;
+                line-height: 48px;
+                border-radius: 32px;
+                background-color: #F0F4F8;
+                color: #000000;
+                transition: all .3s;
+                position: relative;
+                overflow: hidden;
+                @media (max-width:880px) {
+                    margin-top: 20px;
+                }
+                p{
+                    position: relative;
+                    z-index: 2;
+                    transition: all .3s;
+                }
+                &{
+                    cursor: pointer;
+                }
+                &:hover{
+                    p{
+                        color: white;
+                    }
+                    
+                    &::after{
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 48px;
+                    left: -180px;
+                    background-color: rgba(0, 0, 0, 0.988);
+                    width: 190px;
+                    height: 48px;
+                    border-radius: 24px;
+                    transition: all .3s;
+                }
+            }
+        }
+        .img-container{
+            img{
+                object-position: center;
+            }
+        }
+    }
+    
 
 }

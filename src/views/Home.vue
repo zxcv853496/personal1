@@ -5,7 +5,7 @@
         <div class="copy">
           <p>&copy; 2021 8926ITL成員</p>
         </div>
-        <h3 class="content">
+        <h3 class="content animate__animated animate__fadeInUp">
           <p>2021.03.01 - 人才招募中</p>
           <i class="fas fa-caret-right"></i>
         </h3>
@@ -19,7 +19,7 @@
                 <i class="fas fa-trophy"></i>：
               </td>
               <td class="title">
-                大手攜小手-物聯網程式設計競賽
+                TANet 2020-論文
               </td>
             </tr>
             <tr>
@@ -27,7 +27,7 @@
                 <i class="fas fa-user-friends"></i>：
               </td>
               <td>
-                陳峻暐 許惟元 徐偉程
+                許惟元
               </td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
                 <i class="fas fa-table"></i>：
               </td>
               <td>
-                2021.03.01
+                2020.09.10
               </td>
             </tr>
           </table>
@@ -45,7 +45,7 @@
         <button class="hand-arrow"></button>
       </div>
     </div>
-    <Teacher />
+    <Teacher :scroll="scroll" :scroll2='scroll2'/>
     <Personal />
     <Introduction />
     <Showimg />
@@ -68,27 +68,33 @@ export default {
   data() {
     return {
       color: 'red',
+      scroll: false,
+      scroll2:false,
     }
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll, true);
   },
-  methods: {
+  methods:{
     handleScroll() {
-      console.log(scrollTop)
       var scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       // var scroll = scrollTop - this.i;
       // this.i = scrollTop;
-      if (scrollTop > 0) {
+      if (scrollTop > 100) {
         this.scroll = true
       } else {
         this.scroll = false
       }
+      if (scrollTop > 900) {
+        this.scroll2 = true
+      } else {
+        this.scroll2 = false
+      }
+      console.log(scrollTop)
     },
-  },
-
+  }
 }
 </script>

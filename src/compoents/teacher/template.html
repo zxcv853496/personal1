@@ -1,17 +1,22 @@
 <section class="teacher">
     <div class="container">
-        <div class="title">
-            <h2 class="animate__animated animate__fadeInUp">指導老師</h2>
+        <div class="title"
+        :class="{'animate__animated animate__fadeInUp':scroll}">
+            <h2>
+                指導老師
+            </h2>
             <div class="content animate__animated animate__fadeInUp" >
                 <p>Rung-Shiang Cheng ∙ 程榮祥</p> 
                 <p><span>Professor ∙ </span>設計與資訊學院院長/資訊科技系教授兼主任</p> 
             </div>
         </div>
         <div class="banner">
-            <div class="img-container animate__animated animate__fadeInLeft" >
+            <div 
+            :class="{'img-container animate__animated animate__fadeInLeft':scroll}" >
                 <img src="/img/teacher.jpg" alt="">
             </div>
-            <div class="canvas animate__animated animate__fadeInRight" >
+            <div class="canvas" 
+            :class="{'animate__animated animate__fadeInRight':scroll}" >
                 <h4>- Educations -</h4>
                 <div class="content">
                     <span class="sub-title">
@@ -36,11 +41,63 @@
                 </div>
             </div>
         </div>
-        <div  class="introduction" :class="{'active':active}" >
+        <div  class="introduction" :class="{'active':active1}" >
             <div class="container">
                 <h4>- Experiences -</h4>
                 <table>
                     <tr v-for="item in data" v-bind:key='item.index'>
+                        <th>{{ item.year }}</th> 
+                        <td>{{ item.content}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container"
+    :class="{'active':active1}">
+        <div class="title"
+        :class="{'animate__animated animate__fadeInUp':scroll2}">
+            <h2>指導老師</h2>
+            <div class="content" >
+                <p>LUDWIG ∙ 陳紀翰</p> 
+                <p><span>Professor ∙ </span>助理教授級專業技術人員/資科系兼行政老師</p> 
+            </div>
+        </div>
+        <div class="banner">
+            <div class="img-container" 
+            :class="{'img-container animate__animated animate__fadeInLeft':scroll2}">
+                <img src="/img/teacher2.jpg" alt="">
+            </div>
+            <div class="canvas"
+            :class="{'animate__animated animate__fadeInRight':scroll2}" >
+                <h4>- Educations -</h4>
+                <div class="content">
+                    <span class="sub-title">
+                        (201x-201x)
+                    </span>
+                    <div class="sub-content">
+                        <p>國立交通大學 電機工程系</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <span class="sub-title">
+                        (201x-201x)
+                    </span>
+                    <div class="sub-content">
+                        <p>國立交通大學 資訊工程研究所</p>
+                    </div>
+                </div>
+                <div class="span-container">
+                    <span v-on:click='ExperiencesOpen2()'><p>查看更多</p></p></span>
+                    <a class="span" href="http://34.92.60.244/"><p>個人網頁</p></a>
+                </div>
+            </div>
+        </div>
+        <div  class="introduction" :class="{'active':active2}" >
+            <div class="container">
+                <h4>- 競賽獲獎 -</h4>
+                <table>
+                    <tr v-for="item in data2" v-bind:key='item.index'>
                         <th>{{ item.year }}</th> 
                         <td>{{ item.content}}</td>
                     </tr>

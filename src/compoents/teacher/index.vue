@@ -6,7 +6,8 @@
 export default {
     data() {
         return{
-            active:false,
+            active1:false,
+            active2:false,
             data:[
                 {
                     year: '2019.02',
@@ -49,12 +50,54 @@ export default {
                     content: '成功大學資訊工程所網路助教',
                 },
             ],
+            data2:[
+                {
+                    year: '2020',
+                    content: '僑光科技大學校內畢業專題競賽 106 級 第一名 <AI 視覺輔助室內設計',
+                },
+                {
+                    year: '2020',
+                    content: '僑光科技大學校內畢業專題競賽 106 級 佳作 <人臉識別相簿自動分類管理系統>',
+                },
+                {
+                    year: '2020',
+                    content: '僑光科技大學校內畢業專題競賽 106 級 佳作<以類神經網路對手寫漢字及書法字進行風格轉換 ',
+                },
+                {
+                    year: '2019',
+                    content: '全國第一屆技職院校大手攜小手物聯網創新應用競賽：佳作',
+                },
+                {
+                    year: '2019',
+                    content: '全國金腦獎專題競賽 : 優良獎   <AI智慧收銀機 >',
+                },
+                {
+                    year: '2019',
+                    content: 'IETAC 專題競賽 : 佳作   <以 VR 模式製作商場店家資訊系統>',
+                },
+                {
+                    year: '2018',
+                    content: '高雄 KIDE 國際發明展：銀牌獎 <天氣盒子>',
+                },
+                {
+                    year: '2018',
+                    content: '明日之星創新創業競賽：銀牌獎 <智慧椅墊>',
+                },
+
+            ]
         }
     },
+    props: [
+        'scroll',
+        'scroll2'
+    ],
 
     methods:{
       ExperiencesOpen(){
-          this.active = !this.active
+          this.active1 = !this.active1
+      },
+        ExperiencesOpen2(){
+          this.active2 = !this.active2
       },
     }
 }
