@@ -46,8 +46,10 @@
       </div>
     </div>
     <Teacher :scroll="scroll" :scroll2='scroll2'/>
-    <Personal />
-    <Introduction />
+    <Personal :scroll="personal_scroll" :scroll2="personal_scroll2"
+    :scroll3='personal_scroll3'/>
+    <Introduction :scroll='introduction_scroll' :scroll2='
+      introduction_scroll2'/>
     <Showimg />
   </div>
 </template>
@@ -70,6 +72,11 @@ export default {
       color: 'red',
       scroll: false,
       scroll2:false,
+      personal_scroll:false,
+      personal_scroll2:false,
+      personal_scroll3:false,
+      introduction_scroll:false,
+      introduction_scroll2:false,
     }
   },
   mounted() {
@@ -92,6 +99,32 @@ export default {
         this.scroll2 = true
       } else {
         this.scroll2 = false
+      }
+
+      if (scrollTop > 1865) {
+        this.personal_scroll = true
+      } else {
+        this.personal_scroll = false
+      }
+      if (scrollTop > 2000) {
+        this.personal_scroll2 = true
+      } else {
+        this.personal_scroll2 = false
+      }
+      if (scrollTop > 2374) {
+        this.personal_scroll3 = true
+      } else {
+        this.personal_scroll3 = false
+      }
+      if (scrollTop > 2850) {
+        this.introduction_scroll = true
+      } else {
+        this.introduction_scroll = false
+      }
+      if (scrollTop > 3950) {
+        this.introduction_scroll2 = true
+      } else {
+        this.introduction_scroll2 = false
       }
       console.log(scrollTop)
     },

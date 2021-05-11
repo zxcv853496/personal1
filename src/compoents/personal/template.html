@@ -1,14 +1,17 @@
 <div class="personal">
     <div class="container">
-        <div class="title animate__animated animate__fadeInUp" >
+        <div class="title" 
+        :class="{'animate__animated animate__zoomIn':scroll}">
             <h2>8926成員</h2>
         </div>
         <div class="img-container ">
             <div class="img-content " v-for="item in data " :key="item.index">
                 <div class="img">
-                    <img v-bind:src=item.img alt="">
+                    <img v-bind:src=item.img alt=""
+                    :class="{'animate__animated animate__fadeIn animate__slow':scroll2}">
                 </div>
-                <div class="r-container">
+                <div class="r-container"
+                :class="{'animate__animated animate__fadeInUp':scroll3}">
                     <h2 class="name">{{ item.name }}</h2>
                     <h2>{{ item.englishName}}</h2>
                     <div class="p-container">

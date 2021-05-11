@@ -36,7 +36,12 @@ export default {
                 },
             ]
         }
-    }
+    },
+    props:[
+        'scroll',
+        'scroll2',
+        'scroll3'
+    ]
 }
 </script>
 
